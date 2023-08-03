@@ -1,4 +1,9 @@
-package employeeApp;
+package employeeApp.main;
+
+import employeeApp.enums.Plan;
+import employeeApp.model.Company;
+import employeeApp.model.Employee;
+import employeeApp.model.HealthPlan;
 
 /**
  * Uygulamanın amacı Java'da nesne tabanlı programlamanın temellerinin oluşturulmasıdır.
@@ -12,6 +17,17 @@ public class Main
      */
     private static void workWithData ()
     {
+        HealthPlan healthPlan1 = new HealthPlan(1,"X", Plan.BASIC);
+        HealthPlan healthPlan2 = new HealthPlan(2,"Y",Plan.ADVANCE);
+        String[] healtplans=new String[4];
+        healtplans[0]=healthPlan1.getName();
+        healtplans[1]=healthPlan2.getName();
+
+        System.out.println(healthPlan1.getPlan().getPrice());
+
+        Employee employee = new Employee(1,"gozde apk","lafhladhf","OIDJO", healtplans);
+
+
 
     }
 

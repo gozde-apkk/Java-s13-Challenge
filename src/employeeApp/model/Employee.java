@@ -10,6 +10,14 @@ public class Employee {
     private String password;
     private String[] healthPlans;
 
+    public Employee(long id,String fullname, String email,String password,String[] healthPlans){
+        this.id=id;
+        this.fullname= fullname;
+        this.email=email;
+        this.password=password;
+        this.healthPlans=healthPlans;
+    }
+
 
     //GETTER METHODS
     public  long getId(){
